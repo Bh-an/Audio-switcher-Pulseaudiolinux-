@@ -1,0 +1,13 @@
+[Unit]
+Description=Audio switcher
+DefaultDependencies=no
+After=network.target
+
+[Service]
+Type=simple
+User=bhan
+Group=bhan
+ExecStart=/tmp/audio_switch.sh
+
+[Install]
+WantedBy=default.target
